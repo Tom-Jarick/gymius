@@ -1,36 +1,28 @@
+{% load staticfiles %}
 {% include 'workouts/source.html' %}
+{% include 'workouts/navBar.html' %}
+{% include 'workouts/clock.html' %}
 <!DOCTYPE html>
 <html lang="en" class="full-height">
 
 <head>
+       <!-- Get header references from source -->
         {% block header%}
         {% endblock %}
-        <style>
-        .content-pos{
-            display:flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-content: center;
-        }
-        </style>
 </head>
   
 
-  
-
-<header>
-<ul>
-    <li>Log In</li>
-    <li>Sign Up</li>
-</ul>
-</header>
 
 <body >
-    <div style="justify-content: center;display: flex;"><h3>{{content}}</h3></div>
-    <div class="content-pos">
-        {% block content %}
-        {% endblock %}
-    </div>
+    
+{% block navBar %}
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+ 
+{% block clock %}
+{% endblock %}
 </body>
 
 
