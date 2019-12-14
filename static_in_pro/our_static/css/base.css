@@ -1,0 +1,8 @@
+.basic-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;;
+}
+.hide{
+    display:none
+}

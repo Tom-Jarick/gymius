@@ -3,34 +3,32 @@
 {% block content %}
 
     
-<div ><h1>Basic Information</h1><br>
-
-    <form>
+<div class="basic-form">
+  <form>
             First name:<br>
             <input type="text" name="firstname" value="Tom"><br>
             Last name:<br>
             <input type="text" name="lastname" value="Jarick"><br><br>
              
-        <input type="radio" name="gender" value="male" checked> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other<br>
+        <input class="hide" type="radio" name="gender" value="male" checked> Male<br>
+        <input class="hide" type="radio" name="gender" value="female"> Female<br>
+  
         <input type="submit" value="Submit">   
       </form>
-</div>
-<div>
-<h1>Funtion</h1>
+
 <form>
         Duration<br>
+        
         <input type="text" name="Duration" value="3min"><br>
         sets:<br>
         <input type="text" name="sets" value="3"><br><br>
         <input type="text" name="break" value="30s"><br><br>
-    Category<br>    
-    <input type="radio" name="pushUp" value="push up" checked> Push Up<br>
-    <input type="radio" name="sitUp" value="female"> Sit Up<br>
-    <input type="radio" name="other" value="other"> Other<br>
+    Excercise<br>    
+    <input type="radio" name="excercise" value="push up" checked> Push Up<br>
+    <input type="radio" name="excercise" value="female"> Sit Up<br>
+    <input type="radio" name="excercise" value="other"> Other<br>
     <input type="submit" value="Submit">   
   </form>
 </div>
-<div style="background: cornflowerblue;"><h1>Graph Display</h1></div>
+
 {% endblock%}
