@@ -1,0 +1,49 @@
+
+:root {
+--white: rgba(239,251,235, 1);
+--darkgreen: rgba(0,149,0, 1);
+--lightgreen: rgb(202, 239, 191);
+--darkgrey: rgba(70,70,70, 1);
+--lightgrey: rgba(130,130,130, 1);
+}
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: "Libre Baskerville",Arial,sans-serif;
+    background-color:var(white);
+    
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+
+   }
+.basic-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;;
+    color: var(--lightgreen);
+
+}
+.hide{
+    display:none
+}
+
+.nav-back{
+    background-color: var(--lightgreen);
+    color: var(--darkgrey);
+    border-radius: 0px 0px 15px 15px;
+    
+}
+label.input-group-text,button.input-group-text,span.input-group-text{
+    background-color: var(--lightgrey);
+    color: white;
+}
+
+
+.content-box{
+   height: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}

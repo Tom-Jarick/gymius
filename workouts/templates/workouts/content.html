@@ -1,41 +1,95 @@
-{% extends 'workouts/base.html'%}
+{% include 'workouts/base.html'%}
 
 {% block content %}
-
-    
-<div class="basic-form">
-  <form>
-            First name:<br>
-            <input type="text" name="firstname" value="Tom"><br>
-            Last name:<br>
-            <input type="text" name="lastname" value="Jarick"><br><br>
-             
-        <input class="hide" type="radio" name="gender" value="male" checked> Male<br>
-        <input class="hide" type="radio" name="gender" value="female"> Female<br>
-  
-        <input type="submit" value="Submit">   
-      </form>
-
-<form>
-        Duration<br>
+<div class="container content-box">
+  <div class="row justify-content-md-center">
+    <div class="col-5 align-self-center">
+      <div class="container ">
+        <div class="form-group input-group ">
+          
+          <input type="text" placeholder="First name" aria-label="First name" class="form-control">
+          <input type="text" placeholder="Last name" aria-label="Last name" class="form-control">
+          <div class="input-group-append">
+            <button class="input-group-text">Register</button>
+          </div>
+          
+        </div>
+        <div class="input-group form-group">
+          <input type="text" class="form-control" placeholder="Weight">
+          <div class="input-group-append">
+          <span class="input-group-text">lbs</span>
+          </div>
+        </div>
+        <div class="form-group input-group ">
+          <input type="text" class="form-control" placeholder="Height">
+          <div class="input-group-append ">
+          <span class="input-group-text">fts</span>
+          </div>
+        </div>
+      </div>
+      
         
-        <input type="text" name="Duration" value="3min"><br>
-        sets:<br>
-        <input type="text" name="sets" value="3"><br><br>
-        <input type="text" name="break" value="30s"><br><br>
-    Excercise<br>    
-    <input type="radio" name="excercise" value="push up" checked> Push Up<br>
-    <input type="radio" name="excercise" value="female"> Sit Up<br>
-    <input type="radio" name="excercise" value="other"> Plank<br>
-    <input type="radio" name="excercise" value="other"> Other<br>
-    <input type="submit" value="Submit">   
-  </form>
-
-  <form action="">
-    <input type="text" name="age" value="30">
-    <input type="text" name="height" value = "177">
-    <input type="text" name="weight" value ="140">
-  </form>
+      <div class="container">
+        <p for="exampleFormControlSelect1">Excercise</p>
+        <div class=" form-group input-group">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Duration</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">10 mins</option>
+            <option value="2">20 mins</option>
+            <option value="3">30 mins</option>
+          </select>
+        </div>
+        <div class="form-group">
+          
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Plank</option>
+            <option>PushUp</option>
+            <option>SitUp</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+       
+    
+        <div class="input-group form-group ">
+          <input type="text" class="form-control" placeholder="sets" aria-label="Dollar amount (with dot and two decimal places)">
+          <div class="input-group-append">
+            <span class="input-group-text">sets</span>
+          </div>
+        </div>
+        <div class="input-group form-group ">
+          <input type="text" class="form-control" placeholder="Break" aria-label="Dollar amount (with dot and two decimal places)">
+          <div class="input-group-append">
+            <span class="input-group-text">seconds</span>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+    <div class="col-4 offset-md-1 align-self-center">
+          
+      <svg viewbox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="#caefbf"/>
+          <path fill="none" stroke-linecap="round" stroke-width="5" stroke="#fff"
+                stroke-dasharray="125.6,125.6"
+                d="M50 10
+                   a 40 40 0 0 1 0 80
+                   a 40 40 0 0 1 0 -80"/>
+          <text x="50" y="50" text-anchor="middle" dy="7" font-size="20">30s</text>
+        </svg>
+  
+  </div>
+  </div>
+   
 </div>
+
+  
+  
+
+  
 
 {% endblock%}

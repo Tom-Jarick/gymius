@@ -1,7 +1,8 @@
 {% load staticfiles %}
 {% include 'workouts/source.html' %}
 {% include 'workouts/navBar.html' %}
-{% include 'workouts/clock.html' %}
+
+{% include 'workouts/graph.html' %}
 <!DOCTYPE html>
 <html lang="en" class="full-height">
 
@@ -15,13 +16,19 @@
 
 <body >
     
-{% block navBar %}
+{% block navBar%}
 {% endblock %}
 
+        
 {% block content %}
 {% endblock %}
- 
-{% block clock %}
+
+<!-- forms and input -->
+
+
+
+<!-- display historical data of user's excercise -->
+{% block graph %}
 {% endblock %}
 </body>
 
